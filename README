@@ -1,0 +1,6 @@
+We choose to use Python to write this program because socket programming is easy to implement.Python is easier to code and debug.
+The SimpleSocket.py is the source which implement the client program. And the client file is used to call the source file. Finally, we use Makefile to let it compile and run automatically.
+We validate the input firstly and avoid the some illegal inputs. Then we use connection() function to communicate with the server. In the connection() function, we check inputs, define ports and whether using the SSL connection. Meanwhile, we check the ports input validation. Then I use the connection() function to call the getSolution() function which calculate the response from the server. Once we receive the "BYE", we print the secret flag and exit the program.
+Challenges we faced are debugging the code several times and optimize the code. Then we test some test cases to avoid some exceptions and make the program work properly.
+If some illegal inputs like wrong port number and wrong NeuID, the program will print the error information which ask the user to input proper values and execute again.  
+Run "./client (port number if it inputs) (whether use ssl connection) hostname(cs5700f16@ccs.neu.edu) NEUID" is the command to run the code successfully. 
